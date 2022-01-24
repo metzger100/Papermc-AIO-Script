@@ -22,8 +22,7 @@ WARNING: This script runs the Server with root. Only use on private servers and 
 ### Setting up Linux from Windows via ssh:
 - Download/Install Putty and connect to your Linux-System (get the Ip with a networkscan app or with your Router)
 - Login in with your normal user
-- Grant access to login with root:
-- setup the script:
+- setup the serverfolder:
 ```bash
 sudo mkdir minecraft
 ```
