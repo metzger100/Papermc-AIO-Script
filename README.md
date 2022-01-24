@@ -1,4 +1,4 @@
-# Papermc-AIO-script
+# Papermc-AIO-Script
 This script is made for Debian and Debian based Distros. Might also work on other linux distros with apt-packagemanager installed.
 
 Features:
