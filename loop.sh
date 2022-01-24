@@ -6,8 +6,8 @@ cd "$BINDIR"
 echo "\033]0;minecraft\007"
 
 #INSTALLING NEEDED PACKAGES AND CLEANING UP
-sudo apt -y install screen curl jq wget zip openjdk-17-jdk
-sudo apt -y autoremove
+apt -y install screen curl jq wget zip openjdk-17-jdk
+apt -y autoremove
 
 #STARTING NOIP2-SERVICE (REMOVE "#" IF YOU WANT TO USE)
 
