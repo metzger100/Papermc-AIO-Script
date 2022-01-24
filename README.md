@@ -2,32 +2,32 @@
 This script is made for Debian (min. stable) and Debian based Distros. Might also work on other linux distros with apt-packagemanager installed.
 
 ## Features:
--Setup for probably all MC-Versions
+- Setup for probably all MC-Versions
 
--Autoupdate of Paper for the specified Version
+- Autoupdate of Paper for the specified Version
 
--creating a backup.zip of the three Vanilla levels; Easy to add more Levels for the backup
+- creating a backup.zip of the three Vanilla levels; Easy to add more Levels for the backup
 
--Autorestart
+- Autorestart
 
--Autoactivate noip2 on startup (deactivated by default)
+- Autoactivate noip2 on startup (deactivated by default)
 
 ## Prerequirements:
--Debian/linux with ssh-server (Option at Installation with netinstaller)
+- Debian/linux with ssh-server (Option at Installation with netinstaller)
 
 ## Installation:
--Click on Code
+- Click on Code
 
--Click Download
+- Click Download
 
--Extract the files
+- Extract the files
 
 ### Setting up Linux from Windows via ssh:
--Download/Install Putty and connect to your Linux-System (get the Ip with a networkscan app or with your Router)
+- Download/Install Putty and connect to your Linux-System (get the Ip with a networkscan app or with your Router)
 
--Login in with your normal user
+- Login in with your normal user
 
--Grant access to login with root:
+- Grant access to login with root:
 
 >sudo apt-get install nano
 
@@ -37,23 +37,23 @@ change 'PermitRootLogin yes' to 'PermitRootLogin no' or add '#' before it
 
 >sudo /etc/init.d/ssh restart
 
--Close Putty and Reopen it and login with root user (Username: 'root'; password: same as sudo-password)
+- Close Putty and Reopen it and login with root user (Username: 'root'; password: same as sudo-password)
 
--setup the script:
+- setup the script:
 
 >cd /home/USER/ (replace USER with the name of your normal user-account)
 
 >mkdir minecraft
 
--Download/Install WinSCP and conntect to your Linux-System
+- Download/Install WinSCP and conntect to your Linux-System
 
--Login with your root user
+- Login with your root user
 
--navigate to /home/USER/minecraft
+- navigate to /home/USER/minecraft
 
--upload the 2 scripts
+- upload the 2 scripts
 
--change to Putty:
+- change to Putty:
 
 >chmod 0744 start.sh loop.sh
 
@@ -65,13 +65,13 @@ change 'PermitRootLogin yes' to 'PermitRootLogin no' or add '#' before it
 The changes you can do are described in the Comments which are the Lines beginning with a "#"
 
 ### Optional
--Create a Account at noip.com and create a new hostname
+- Create a Account at noip.com and create a new hostname
 
--Install noip2 https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/
+- Install noip2 https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/
 
--Forward TCP/UDP Port 25565 to your Debian/Linux System in your Routers settings
+- Forward TCP/UDP Port 25565 to your Debian/Linux System in your Routers settings
 
--uncomment the /usr/local/bin/noip2 in loop.sh
+- uncomment the /usr/local/bin/noip2 in loop.sh
 
 ## USEAGE
 - if you enter /stop into the chat of the Minecraft server it stops, makes the backup, updates PaperMC and Starts again
