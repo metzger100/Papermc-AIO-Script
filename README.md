@@ -60,7 +60,7 @@ change 'PermitRootLogin yes' to 'PermitRootLogin no' or add '#' before it
 >./start.sh
 
 ### Change settings in the script:
--Open the loop.sh file with your Editor
+- Open the loop.sh file with your Editor
 
 The changes you can do are described in the Comments which are the Lines beginning with a "#"
 
