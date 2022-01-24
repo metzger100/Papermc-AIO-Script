@@ -7,7 +7,7 @@ This script is made for Debian (min. stable) and Debian based Distros. Might als
 - creating a backup.zip of the three Vanilla levels; Easy to add more Levels for the backup
 - Autorestart
 - Autoactivate noip2 on startup (deactivated by default)
-- 
+- creates a serverlog (screenlog.0)
 
 ## Prerequirements:
 - Debian/linux with ssh-server (Option at Installation with netinstaller)
