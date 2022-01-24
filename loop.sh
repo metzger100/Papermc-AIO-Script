@@ -9,9 +9,9 @@ echo "\033]0;minecraft\007"
 apt -y install screen curl jq wget zip openjdk-17-jdk
 apt -y autoremove
 
-#STARTING NOIP2-SERVICE (REMOVE "#" IF YOU WANT TO USE)
+#STARTING NOIP2-SERVICE
 
-#/usr/local/bin/noip2
+/usr/local/bin/noip2
 
 #STARTING LOOP
 while true
