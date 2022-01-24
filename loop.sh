@@ -6,8 +6,8 @@ cd "$BINDIR"
 echo "\033]0;minecraft\007"
 
 #INSTALLING NEEDED PACKAGES AND CLEANING UP
-apt -y install screen curl jq wget zip openjdk-17-jdk
-apt -y autoremove
+sudo apt -y install screen curl jq wget zip openjdk-17-jdk
+sudo apt -y autoremove
 
 #STARTING NOIP2-SERVICE (REMOVE "#" IF YOU WANT TO USE)
 
@@ -46,6 +46,8 @@ download_url="$api"/projects/"$name"/versions/"$version"/builds/"$latest_build"/
 
 # Download file
 wget "$download_url" --output-document=server.jar
+
+chmod 7777 server.jar
 
 #BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "world_the_end" IN QOUTES)
 echo 'Backup starts! This can take a view minutes!'
