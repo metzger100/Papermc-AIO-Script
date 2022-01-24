@@ -31,7 +31,7 @@ sudo mkdir minecraft
 - Login with your normal user
 - navigate to /home/USER/minecraft
 - upload the 2 scripts
-- change to Putty:
+- switch to Putty:
 ```bash
 sudo chown -R root:root loop.sh start.sh
 ```
