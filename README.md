@@ -30,34 +30,23 @@ sudo -u USER java -Xms2G -Xmx2500M -XX:+IgnoreUnrecognizedVMOptions -XX:+UnlockE
 - Download/Install Putty and connect to your Linux-System (get the Ip with a networkscan app or with your Router)
 - Login in with your normal user
 - Grant access to login with root:
-```bash
-sudo apt-get install nano
-```
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-change 'PermitRootLogin yes' to 'PermitRootLogin no' or add '#' before it
-```bash
-sudo /etc/init.d/ssh restart
-```
-- Close Putty and Reopen it and login with root user (Username: 'root'; password: same as sudo-password)
 - setup the script:
 ```bash
-cd /home/USER/ (replace USER with the name of your normal user-account)
-```
-```bash
-mkdir minecraft
+sudo mkdir minecraft
 ```
 - Download/Install WinSCP and conntect to your Linux-System
-- Login with your root user
+- Login with your normal user
 - navigate to /home/USER/minecraft
 - upload the 2 scripts
 - change to Putty:
 ```bash
-chmod 0744 start.sh loop.sh
+sudo chown -R root:root loop.sh start.sh server.jar
 ```
 ```bash
-./start.sh
+sudo chmod 0744 start.sh loop.sh
+```
+```bash
+sudo ./start.sh
 ```
 ### Change settings in the script:
 - Open the loop.sh file with your Editor
@@ -77,7 +66,7 @@ The changes you can do are described in the Comments which are the Lines beginni
 cd /home/USER/minecraft (replace USER with the name of your normal user-account)
 ```
 ```bash
-./start.sh
+sudo ./start.sh
 ```
 - if you want to login to the serverconsole while the server is running use Putty and login with your root-user
 ```bash
