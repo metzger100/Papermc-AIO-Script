@@ -20,7 +20,7 @@ do
 #EULA-CHECK
 EULA="$BINDIR"/eula.txt
 if [ -f "$EULA" ]; then
- echo 'ERROR: Eula already exists. If Error appears set eula "true" by hand'
+ echo 'ERROR: Eula already exists. If Error appears set eula "true" by hand.'
 else
  cd "$BINDIR"
  sh -c 'echo "eula=true" >> eula.txt'
