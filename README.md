@@ -26,19 +26,11 @@ WARNING: This script runs the Server with root. Only use on private servers and 
 ```bash
 mkdir minecraft
 ```
-```bash
-cd minecraft
-```
-```bash
-wget https://github.com/metzger100/Papermc-AIO-Script/archive/refs/tags/release.tar.gz
-```
-```bash
-tar -xf release.tar.gz
-```
-```bash
-rm release.tar.gz README.md
-```
-
+- Download/Install WinSCP/FileZilla and connect to your Linux-System
+- Login as your normal user
+- navigate to /home/USER/minecraft Folder
+- upload the extracted loop.sh and start.sh
+- switch back to putty:
 ```bash
 sudo chown -R root:root start.sh loop.sh
 ```
@@ -72,3 +64,4 @@ sudo ./start.sh
 ```bash
 screen -r
 ```
+- to download the backup, connect with your server with WinSCP/FileZilla and download the backup.zip in /home/USER/minecraft/backup/
