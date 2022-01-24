@@ -5,7 +5,7 @@ WARNING: This script runs the Server with root. Only use on private servers and 
 
 ## Features:
 - Setup for probably all MC-Versions
-- Autoupdate of Paper for the specified Version
+- Autoupdate of Paper for the specified Version (default 1.18.X)
 - creating a backup.zip of the three Vanilla levels; Easy to add more Levels for the backup
 - Autorestart
 - Autoactivate noip2 on startup
