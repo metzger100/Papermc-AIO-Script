@@ -33,7 +33,7 @@ sudo mkdir minecraft
 - upload the 2 scripts
 - switch to Putty:
 ```bash
-sudo chown -R root:root start.sh
+sudo chown -R root:root start.sh loop.sh
 ```
 ```bash
 sudo chmod 0744 start.sh loop.sh
