@@ -8,7 +8,7 @@ WARNING: This script runs the Server with root. Only use on private servers and 
 - Autoupdate of Paper for the specified Version
 - creating a backup.zip of the three Vanilla levels; Easy to add more Levels for the backup
 - Autorestart
-- Autoactivate noip2 on startup (deactivated by default)
+- Autoactivate noip2 on startup
 - creates a serverlog (screenlog.0)
 
 ## Prerequirements:
