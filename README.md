@@ -1,5 +1,5 @@
 # Papermc-AIO-Script
-This script is made for Debian and Debian based Distros. Might also work on other linux distros with apt-packagemanager installed.
+This script is made for Debian (min. stable) and Debian based Distros. Might also work on other linux distros with apt-packagemanager installed.
 
 ## Features:
 -Setup for probably all MC-Versions
