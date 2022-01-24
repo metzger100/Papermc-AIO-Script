@@ -8,6 +8,10 @@ This script is made for Debian and Debian based Distros. Might also work on othe
 
 -creating a backup.zip of the three Vanilla levels; Easy to add more Levels for the backup
 
+-Autorestart
+
+-Autoactivate noip2 on startup (deactivated by default)
+
 ## Prerequirements:
 -Debian/linux with ssh-server (Option at Installation with netinstaller)
 
@@ -37,7 +41,7 @@ change 'PermitRootLogin yes' to 'PermitRootLogin no' or add '#' before it
 
 -setup the script:
 
->"cd /home/USER/" (replace USER with the name of your normal user-account)
+>cd /home/USER/ (replace USER with the name of your normal user-account)
 
 >mkdir minecraft
 
@@ -68,3 +72,16 @@ The changes you can do are described in the Comments which are the Lines beginni
 -Forward TCP/UDP Port 25565 to your Debian/Linux System in your Routers settings
 
 -uncomment the /usr/local/bin/noip2 in loop.sh
+
+## USEAGE
+- if you enter /stop into the chat of the Minecraft server it stops, makes the backup, updates PaperMC and Starts again
+
+- if you want to start the server use Putty and login with your root-user
+
+>cd /home/USER/minecraft (replace USER with the name of your normal user-account)
+
+>./start.sh
+
+- if you want to login to the serverconsole while the server is running use Putty and login with your root-user
+
+>screen -r
