@@ -4,7 +4,7 @@ This script is made for Debian (min. stable) and Debian based Distros. Might als
 WARNING: This script runs the Server with root. Only use on private servers. [Read here](https://madelinemiller.dev/blog/root-minecraft-server/)
 
 If you want to use it on public servers:
-- change the line where server.jar gets executed to (Change USER to your USERNAME
+- change the line where server.jar gets executed to (Change USER to your USERNAME)
 
 ```bash
 sudo -u USER java -Xms2G -Xmx2500M -XX:+IgnoreUnrecognizedVMOptions -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:-OmitStackTraceInFastThrow -XX:+ShowCodeDetailsInExceptionMessages -XX:+DisableExplicitGC -XX:-UseParallelGC -XX:+PerfDisableSharedMem -XX:+UseZGC -XX:-ZUncommit -XX:ZUncommitDelay=300 -XX:ZCollectionInterval=5 -XX:ZAllocationSpikeTolerance=2.0 -XX:+ExitOnOutOfMemoryError -XX:+AlwaysPreTouch -XX:-DontCompileHugeMethods -XX:+TrustFinalNonStaticFields -XX:+UseFastUnorderedTimeStamps -XX:+UseTransparentHugePages -XX:LargePageSizeInBytes=2M -XX:+UseLargePages -XX:+UseCMoveUnconditionally -XX:+UseNewLongLShift -XX:+UseVectorCmov -XX:+UseXmmI2D -XX:+UseXmmI2F -XX:+ParallelRefProcEnabled -jar server.jar nogui
