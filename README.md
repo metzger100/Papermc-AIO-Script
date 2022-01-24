@@ -64,4 +64,4 @@ sudo ./start.sh
 ```bash
 screen -r
 ```
-- to download the backup, connect with your server with WinSCP/FileZilla and download the backup.zip in /home/USER/minecraft/backup/
+- to download the backup, connect to your server with WinSCP/FileZilla and download the backup.zip in /home/USER/minecraft/backup/
