@@ -24,13 +24,21 @@ WARNING: This script runs the Server with root. Only use on private servers and 
 - Login in with your normal user
 - setup the serverfolder:
 ```bash
-sudo mkdir minecraft
+mkdir minecraft
 ```
-- Download/Install WinSCP and conntect to your Linux-System
-- Login with your normal user
-- navigate to /home/USER/minecraft
-- upload the 2 scripts
-- switch to Putty:
+```bash
+cd minecraft
+```
+```bash
+wget https://github.com/metzger100/Papermc-AIO-Script/archive/refs/tags/release.tar.gz
+```
+```bash
+tar -xf release.tar.gz
+```
+```bash
+rm release.tar.gz README.md
+```
+
 ```bash
 sudo chown -R root:root start.sh loop.sh
 ```
