@@ -46,6 +46,9 @@ sudo chown -R root:root loop.sh start.sh server.jar
 sudo chmod 0744 start.sh loop.sh
 ```
 ```bash
+sudo chmod 7777 server.jar
+```
+```bash
 sudo ./start.sh
 ```
 ### Change settings in the script:
