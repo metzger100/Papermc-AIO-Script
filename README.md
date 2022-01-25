@@ -17,7 +17,7 @@ This script is made for Debian (min. stable) and Debian based Distros. Might als
 
 ## Installation:
 - Click on Code
-- Click Download
+- Click Download ZIP
 - Extract the files
 
 ### Setting up Debian from Windows via ssh:
