@@ -48,7 +48,7 @@ mkdir minecraft
 - Download/Install WinSCP/FileZilla and connect to your Linux-System
 - Login as your normal user
 - navigate to /home/USER/minecraft Folder
-- upload the extracted loop.sh and start.sh
+- upload the extracted loop.sh, update.sh and start.sh
 - switch back to putty:
 ```bash
 chmod 0755 start.sh loop.sh update.sh
