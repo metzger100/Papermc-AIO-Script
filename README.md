@@ -51,6 +51,9 @@ mkdir minecraft
 - upload the extracted loop.sh, update.sh and start.sh
 - switch back to putty:
 ```bash
+cd minecraft
+```
+```bash
 chmod 0755 start.sh loop.sh update.sh
 ```
 ```bash
