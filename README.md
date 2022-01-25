@@ -4,7 +4,7 @@ This script is made for Debian (min. stable) and Debian based Distros. Might als
 ## Features:
 - Setup for probably all MC-Versions
 - Autoupdate of Paper for the specified Version (default 1.18.X)
-- creating a backup.zip of the three Vanilla levels; Easy to add more Levels for the backup
+- creating a backup.zip of the three Vanilla levels and all plugins; Easy to add more Levels for the backup
 - Autorestart
 - Autoactivate noip2 on startup (also works without noip2 installed)
 - creates a serverlog (screenlog.0)
