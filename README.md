@@ -40,7 +40,7 @@ usermod -aG sudo USER
 ```bash
 systemctl restart
 ```
-- Reconnect Putty and login in with your normal user
+- Wait till reboot of Debian finished and reconnect Putty to login in with your normal user
 - setup the serverfolder:
 ```bash
 mkdir minecraft
