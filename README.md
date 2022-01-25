@@ -13,15 +13,36 @@ WARNING: This script runs the Server with root. Only use on private servers and 
 
 ## Prerequirements:
 - Debian/linux with ssh-server (Option at Installation with netinstaller)
+- root-password and normal password
+- Putty and WinSCP/FileZilla
+- ssh-login with root enabled. (Link!)[https://linuxconfig.org/enable-ssh-root-login-on-debian-linux-server]
 
 ## Installation:
 - Click on Code
 - Click Download
 - Extract the files
 
-### Setting up Linux from Windows via ssh:
-- Download/Install Putty and connect to your Linux-System (get the Ip with a networkscan app or with your Router)
-- Login in with your normal user
+### Setting up Debian from Windows via ssh:
+- Download/Install Putty and connect to your Linux-System (get the IP with a networkscan app or with your Router)
+- maybe you need to install sudo:
+Login with your root user (Username: root password: YOURROOTPASSWORD)
+```bash
+apt update
+```
+```bash
+apt -y upgrade
+```
+```bash
+apt -y install sudo
+```
+Grant your normal user sudo access; Replace "USER" with your normal username
+```bash
+usermod -aG sudo USER
+```
+```bash
+systemctl restart
+```
+- Reconnect Putty and login in with your normal user
 - setup the serverfolder:
 ```bash
 mkdir minecraft
@@ -32,18 +53,21 @@ mkdir minecraft
 - upload the extracted loop.sh and start.sh
 - switch back to putty:
 ```bash
-sudo chown -R root:root start.sh loop.sh
+chmod 0755 start.sh loop.sh update.sh
 ```
 ```bash
-sudo chmod 0744 start.sh loop.sh
+./start.sh
 ```
-```bash
-sudo ./start.sh
-```
+Enter your sudo password and the script will do the rest. 
 ### Change settings in the script:
-- Open the loop.sh file with your Editor
-
-The changes you can do are described in the Comments which are the Lines beginning with a "#"
+- Completely stop the server (Press ctrl+C when you logged into your Server console)
+- Open the loop.sh file with your Editor of WinSCP/Download the File and edit with Windows editor
+- Save (and upload the file)
+- run the server
+```bash
+./start.sh
+```
+The changes you can do, are described in the comments which are the Lines beginning with a "#". They are written in capital letters.
 
 ### Optional
 - Create a Account at noip.com and create a new hostname
@@ -53,12 +77,12 @@ The changes you can do are described in the Comments which are the Lines beginni
 
 ## USEAGE
 - if you enter /stop into the chat of the Minecraft server it stops, makes the backup, updates PaperMC and Starts again
-- if you want to start the server use Putty and login with your root-user
+- if you want to start the server use Putty and login with your normal user
 ```bash
-cd /home/USER/minecraft (replace USER with the name of your normal user-account)
+cd minecraft
 ```
 ```bash
-sudo ./start.sh
+./start.sh
 ```
 - if you want to login to the serverconsole while the server is running use Putty and login with your root-user
 ```bash
