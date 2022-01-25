@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BINDIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+BINDIR=$(dirname "$(readlink -fn "$0")")
 cd "$BINDIR"
 
 echo "\033]0;minecraft\007"
