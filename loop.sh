@@ -26,7 +26,7 @@ download_url="$api"/projects/"$name"/versions/"$version"/builds/"$latest_build"/
 wget "$download_url" --output-document=server.jar
 chmod 755 server.jar
 chown $USER:$USER server.jar
-#BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "world_the_end" IN QOUTES)
+#BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "plugins" IN QOUTES)
 echo 'Backup starts! This can take a view minutes!'
 DIR="backup/"
 if [ -d "$DIR" ]; then
