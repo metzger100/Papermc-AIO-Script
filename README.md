@@ -1,8 +1,6 @@
 # Papermc-AIO-Script
 This script is made for Debian (min. stable) and Debian based Distros. Might also work on other linux distros with apt-packagemanager installed.
 
-WARNING: This script runs the Server with root. Only use on private servers and [read that](https://madelinemiller.dev/blog/root-minecraft-server/).
-
 ## Features:
 - Setup for probably all MC-Versions
 - Autoupdate of Paper for the specified Version (default 1.18.X)
