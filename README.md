@@ -73,7 +73,6 @@ The changes you can do, are described in the comments which are the Lines beginn
 - Create a Account at noip.com and create a new hostname
 - Install noip2 https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/
 - Forward TCP/UDP Port 25565 to your Debian/Linux System in your Routers settings
-- uncomment /usr/local/bin/noip2 in loop.sh by removing th "#"
 
 ## USEAGE
 - if you enter /stop into the chat of the Minecraft server it stops, makes the backup, updates PaperMC and Starts again
