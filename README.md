@@ -13,7 +13,7 @@ This script is made for Debian (min. stable) and Debian based Distros. Might als
 - Debian/linux with ssh-server (Option at Installation with netinstaller)
 - root-password and normal password
 - Putty and WinSCP/FileZilla
-- ssh-login with root enabled. (Link!)[https://linuxconfig.org/enable-ssh-root-login-on-debian-linux-server]
+- ssh-login with root enabled. [Link!](https://linuxconfig.org/enable-ssh-root-login-on-debian-linux-server)
 
 ## Installation:
 - Click on Code
