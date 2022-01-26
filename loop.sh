@@ -49,7 +49,7 @@ zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
 #HOST='yourhost e.g. IP or Address'
 #USER='yourusername'
 #PASSWD='yourpassword'
-#UPLOADDIR='yourpathforthehost'
+#UPLOADDIR='yourpathforthehost(Folders must already exist)'
 #FILE='backup/backup.zip'
 #lftp -u $USER,$PASSWD -e "put -O $UPLOADDIR $FILE;quit" $HOST
 
