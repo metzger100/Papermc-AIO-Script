@@ -55,7 +55,7 @@ mkdir minecraft
 - upload the extracted loop.sh, update.sh and start.sh
 - switch back to putty:
 ```bash
-cd minecraft
+cd minecraft/
 ```
 ```bash
 chmod 0755 start.sh loop.sh update.sh
@@ -83,7 +83,7 @@ The changes you can do, are described in the comments which are the Lines beginn
 - if you enter /stop into the chat of the Minecraft server it stops, makes the backup, updates PaperMC and Starts again
 - if you want to start the server use Putty and login with your normal user
 ```bash
-cd minecraft
+cd minecraft/
 ```
 ```bash
 ./start.sh
