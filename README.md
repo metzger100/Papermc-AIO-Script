@@ -3,6 +3,8 @@ This script is made for Debian (min. stable) and Debian based Distros. Might als
 
 WARNING: Autoupdates might cause Problems. Use FTP-Backup or Nextcloud-Backup if possible
 
+HIGHLY RECOMMENDED TO USE THE FTP- OR NEXTCLOUD-BACKUP!!!
+
 ## Features:
 - Setup for probably all MC-Versions
 - Autoupdate of Paper for the specified Version (default 1.18.X)
