@@ -1,6 +1,8 @@
 # Papermc-AIO-Script
 This script is made for Debian (min. stable) and Debian based Distros. Might also work on other linux distros with apt-packagemanager installed.
 
+WARNING: Not recommended for public servers because autoupdates might cause Problems. 
+
 ## Features:
 - Setup for probably all MC-Versions
 - Autoupdate of Paper for the specified Version (default 1.18.X)
