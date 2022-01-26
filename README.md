@@ -88,7 +88,7 @@ cd minecraft
 ```bash
 ./start.sh
 ```
-- if you want to login to the serverconsole while the server is running use Putty and login with your root-user
+- if you want to login to the serverconsole while the server is running use Putty and login with your normal user
 ```bash
 screen -r
 ```
