@@ -35,7 +35,7 @@ wget "$download_url" --output-document=server.jar
 chmod 755 server.jar
 chown $USER:$USER server.jar
 
-#BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "plugins" IN QOUTES); FTP-OPTION AVAILABLE, TO USE IT UNCOMMENT IT AND ENTER THE 5 PROPER SPECIFICATIONS; NEXTCLOUD-OPTION AVAILABLE, TO USE IT UNCOMMENT IT AND ENTER THE PROPER SPECIFICATIONS(https://docs.nextcloud.com/server/18/user_manual/files/access_webdav.html#accessing-files-using-curl)
+#BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "plugins" IN QOUTES); FTP-OPTION AVAILABLE; NEXTCLOUD-OPTION AVAILABLE
 echo 'Backup starts! This can take a view minutes!'
 DIR="backup/"
 if [ -d "$DIR" ]; then
@@ -45,7 +45,7 @@ fi
 mkdir backup/
 zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
 
-#FTP
+#FTP - TO USE IT UNCOMMENT IT AND ENTER THE 5 PROPER SPECIFICATIONS IN THE FOLLOWING 5 LINES
 #HOST='yourhost e.g. IP or Address'
 #USER='yourusername'
 #PASSWD='yourpassword'
@@ -53,7 +53,7 @@ zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
 #UPLOADDIR='yourpathforthehost'
 #lftp -u $USER,$PASSWD -e "put -O $UPLOADDIR $FILE;quit" $HOST
 
-#NEXTCLOUD
+#NEXTCLOUD - TO USE IT UNCOMMENT IT AND ENTER THE PROPER SPECIFICATIONS(https://docs.nextcloud.com/server/18/user_manual/files/access_webdav.html#accessing-files-using-curl)
 #curl -u user:pass -T "backup/backup.zip" "https://example.com/nextcloud/remote.php/dav/files/USERNAME/backup/backup.zip"
 
 echo 'New Backup saved in /backup/!'
