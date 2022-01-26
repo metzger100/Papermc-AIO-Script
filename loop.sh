@@ -45,12 +45,12 @@ fi
 mkdir backup/
 zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
 
-#FTP - TO USE IT UNCOMMENT IT AND ENTER THE 5 PROPER SPECIFICATIONS IN THE FOLLOWING 5 LINES
+#FTP - TO USE IT UNCOMMENT IT AND ENTER THE 4 PROPER SPECIFICATIONS IN THE FOLLOWING 4 LINES
 #HOST='yourhost e.g. IP or Address'
 #USER='yourusername'
 #PASSWD='yourpassword'
-#FILE='backup/backup.zip'
 #UPLOADDIR='yourpathforthehost'
+#FILE='backup/backup.zip'
 #lftp -u $USER,$PASSWD -e "put -O $UPLOADDIR $FILE;quit" $HOST
 
 #NEXTCLOUD - TO USE IT UNCOMMENT IT AND ENTER THE PROPER SPECIFICATIONS(https://docs.nextcloud.com/server/18/user_manual/files/access_webdav.html#accessing-files-using-curl)
