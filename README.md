@@ -6,7 +6,7 @@ WARNING: Autoupdates might cause Problems. Use FTP-Backup or Nextcloud-Backup if
 ## Features:
 - Setup for probably all MC-Versions
 - Autoupdate of Paper for the specified Version (default 1.18.X)
-- creating a backup.zip of the three Vanilla levels and all plugins; Easy to add more Levels for the backup
+- creating a backup.zip of the three Vanilla levels and all plugins; Easy to add more Levels for the backup (on-Drive-Backup by default, use FTP- or Nextcloud-Backup if possible)
 - Autorestart
 - Autoactivate noip2 on startup (also works without noip2 installed)
 - creates a serverlog (screenlog.0)
