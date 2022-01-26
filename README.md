@@ -1,7 +1,7 @@
 # Papermc-AIO-Script
 This script is made for Debian (min. stable) and Debian based Distros. Might also work on other linux distros with apt-packagemanager installed.
 
-WARNING: Not recommended for public servers because autoupdates might cause Problems. 
+WARNING: Autoupdates might cause Problems. Use FTP-Backup or Nextcloud-Backup if possible
 
 ## Features:
 - Setup for probably all MC-Versions
