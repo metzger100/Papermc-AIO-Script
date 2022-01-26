@@ -35,7 +35,7 @@ wget "$download_url" --output-document=server.jar
 chmod 755 server.jar
 chown $USER:$USER server.jar
 
-#BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "plugins" IN QOUTES); FTP-OPTION AVAILABLE, TO USE IT UNCOMMENT IT AND ENTER THE PROPER SPECIFICATIONS; NEXTCLOUD-OPTION AVAILABLE, TO USE IT UNCOMMENT IT AND ENTER THE PROPER SPECIFICATIONS(https://docs.nextcloud.com/server/18/user_manual/files/access_webdav.html#accessing-files-using-curl)
+#BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "plugins" IN QOUTES); FTP-OPTION AVAILABLE, TO USE IT UNCOMMENT IT AND ENTER THE 5 PROPER SPECIFICATIONS; NEXTCLOUD-OPTION AVAILABLE, TO USE IT UNCOMMENT IT AND ENTER THE PROPER SPECIFICATIONS(https://docs.nextcloud.com/server/18/user_manual/files/access_webdav.html#accessing-files-using-curl)
 echo 'Backup starts! This can take a view minutes!'
 DIR="backup/"
 if [ -d "$DIR" ]; then
