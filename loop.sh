@@ -67,9 +67,9 @@ java -Xms2G -Xmx2500M -XX:+IgnoreUnrecognizedVMOptions -XX:+UnlockExperimentalVM
 echo 'Want to stop Server? Press ctrl + c in the next 5 seconds!'
 echo "Rebooting in:"
 for i in 5 4 3 2 1
-do
-echo "$i..."
-sleep 1
-done
-echo 'Server restarts!'
+ do
+  echo "$i..."
+  sleep 1
+ done
+ echo 'Server restarts!'
 done
