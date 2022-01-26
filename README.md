@@ -64,7 +64,7 @@ chmod 0755 start.sh loop.sh update.sh
 ./start.sh
 ```
 Enter your sudo password and the script will do the rest. 
-### Change settings in the script:
+### Change settings in the script: (Don't use the WinSCP Editor)
 - Completely stop the server (Press ctrl+C when you logged into your Server console)
 - Open the loop.sh file with your Editor of WinSCP/Download the File and edit with [Notepad++](https://notepad-plus-plus.org/downloads/)
 - Save (and upload the file)
