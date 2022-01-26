@@ -39,8 +39,8 @@ chown $USER:$USER server.jar
 echo 'Backup starts! This can take a view minutes!'
 DIR="backup/"
 if [ -d "$DIR" ]; then
-rm -r backup
-echo 'Old Backup removed!'
+ rm -r backup
+ echo 'Old Backup removed!'
 fi
 mkdir backup/
 zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
