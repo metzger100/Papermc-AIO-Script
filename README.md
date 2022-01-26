@@ -4,7 +4,7 @@ This script is made for Debian (min. stable) and Debian based Distros. Might als
 WARNING: Autoupdates might cause Problems. Use FTP-Backup or Nextcloud-Backup if possible
 
 HIGHLY RECOMMENDED TO USE THE FTP- OR NEXTCLOUD-BACKUP!!!
-[LINK](https://github.com/metzger100/Papermc-AIO-Script#change-settings-in-the-script)
+[LINK](https://github.com/metzger100/Papermc-AIO-Script#change-settings-in-the-script-dont-use-the-winscp-editor)
 
 ## Features:
 - Setup for probably all MC-Versions
