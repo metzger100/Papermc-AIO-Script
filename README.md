@@ -80,7 +80,7 @@ The changes you can do, are described in the comments which are the Lines beginn
 - Forward TCP/UDP Port 25565 to your Debian/Linux System in your Routers settings
 
 ## USEAGE
-- if you enter /stop into the chat of the Minecraft server it stops, makes the backup, updates PaperMC and Starts again
+- if you write /stop into the chat of the Minecraft server it stops, updates PaperMC to the latest Version, creates the backup, (uploads the backup via ftp or Nextcloud) and restarts
 - if you want to start the server use Putty and login with your normal user
 ```bash
 cd minecraft/
