@@ -35,7 +35,7 @@ wget "$download_url" --output-document=server.jar
 chmod 755 server.jar
 chown $USER:$USER server.jar
 
-#BACKUP (TO BACKUP MORE LEVELS ADD THE NAME OF THE WORLD-LEVEL-FOLDER BEHIND "plugins" IN QOUTES); FTP-OPTION AVAILABLE; NEXTCLOUD-OPTION AVAILABLE
+#BACKUP (TO BACKUP MORE LEVELS/FILES ADD THE NAME OF THE WORLD-LEVEL-FOLDER/FILENAME BEHIND "plugins" IN QOUTES); FTP-OPTION AVAILABLE; NEXTCLOUD-OPTION AVAILABLE
 echo 'Backup starts! This can take a view minutes!'
 DIR="backup/"
 if [ -d "$DIR" ]; then
