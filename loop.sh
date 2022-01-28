@@ -63,7 +63,7 @@ zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
 echo 'New Backup saved in /backup/ in the server folder!'
 
 #SERVERSTART (CHANGE Xms AND Xmx TO INCREASE/DECREASE MEMORY USAGE)
-java -Xms2G -Xmx2500M -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+ZProactive -XX:ZCollectionInterval=600 -XX:+UseLargePages -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMe -jar server.jar nogui
+java -Xms2G -Xmx2500M -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+ZProactive -XX:ZCollectionInterval=600 -XX:+UseLargePages -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -jar server.jar nogui
 echo 'Want to stop Server? Press ctrl + c in the next 5 seconds!'
 echo "Rebooting in:"
 for i in 5 4 3 2 1
