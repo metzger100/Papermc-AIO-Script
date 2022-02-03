@@ -58,7 +58,7 @@ mkdir minecraft
 cd minecraft/
 ```
 ```bash
-chmod 0755 start.sh loop.sh update.sh
+chmod 0750 start.sh loop.sh update.sh
 ```
 ```bash
 ./start.sh
