@@ -51,7 +51,7 @@ zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
 #PASSWD='yourpassword'
 #UPLOADDIR='yourpathforthehost(Folders must already exist)'
 #FILE='backup/backup.zip'
-#lftp -u $USER,$PASSWD -e "put -O $UPLOADDIR $FILE;quit" $HOST
+#lftp -u $USER,$PASSWD -e "set net:max-retries 2; put -O $UPLOADDIR $FILE;quit" $HOST
 
 #NEXTCLOUD - TO USE IT UNCOMMENT IT AND ENTER THE 3 PROPER SPECIFICATIONSIN THE FOLLOWING 3 LINES(https://docs.nextcloud.com/server/18/user_manual/files/access_webdav.html#accessing-files-using-curl)
 #HOST='yourhost e.g. https://nextcloud.mydomain.tld/remote.php/dav/files/scannerusername/ScansnapInbox/$filename'
