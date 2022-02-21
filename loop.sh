@@ -43,22 +43,21 @@ if [ -d "$DIR" ]; then
  echo 'Old Backup removed!'
 fi
 mkdir backup/
-zip -r "backup/backup.zip" "world" "world_nether" "world_the_end" "plugins"
+FILE=backup/backup-$(date +"%Y-%m-%d").zip
+zip -r $FILE world world_nether world_the_end plugins
 
 #FTP - TO USE IT UNCOMMENT IT AND ENTER THE 4 PROPER SPECIFICATIONS IN THE FOLLOWING 4 LINES
 #HOST='yourhost e.g. IP or Address'
 #USER='yourusername'
 #PASSWD='yourpassword'
 #UPLOADDIR='yourpathforthehost(Folders must already exist)'
-#FILE='backup/backup.zip'
 #lftp -u $USER,$PASSWD -e "set net:max-retries 2; put -O $UPLOADDIR $FILE;quit" $HOST
 
 #NEXTCLOUD - TO USE IT UNCOMMENT IT AND ENTER THE 3 PROPER SPECIFICATIONSIN THE FOLLOWING 3 LINES(https://docs.nextcloud.com/server/18/user_manual/files/access_webdav.html#accessing-files-using-curl)
 #HOST='yourhost e.g. https://nextcloud.mydomain.tld/remote.php/dav/files/scannerusername/ScansnapInbox/$filename'
 #USER='yourusername'
 #PASSWD='yourpassword'
-#FILE='backup/backup.zip'
-#curl -u $USER:$PASSWD -T "backup/backup.zip" "$HOST"
+#curl -u $USER:$PASSWD -T $FILE $HOST
 
 echo 'New Backup saved in /backup/ in the server folder!'
 
